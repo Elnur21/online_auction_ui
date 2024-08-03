@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">{{ message }}, {{ mes2 }}, {{ vul() }}</div>
+
+    <script type="module">
+        import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+        createApp({
+            setup() {
+                const message = 'Hello niwsdj!'
+                const mes2 = ref('Hello dfgdrtfxg!')
+                return {
+                    message,
+                    mes2,
+                    vul: () => "salam"
+                }
+            }
+        }).mount('#app')
+    </script>
+</body>
+
+</html>
